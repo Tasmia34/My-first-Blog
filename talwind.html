@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful Tailwind Demo</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-10 shadow-lg">
+      <h1 class="text-5xl font-bold text-center text-white font-serif drop-shadow-lg">
+        Colorful Tailwind Demo
+      </h1>
+      <p class="mt-3 text-center text-yellow-200 italic font-semibold">
+        A bright showcase of Tailwind basics
+      </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <!-- Typography Colors -->
+      <section>
+        <h2 class="text-3xl font-bold text-center text-indigo-600">Typography Styles</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+          <div class="p-6 rounded-xl shadow-md bg-yellow-100 border border-yellow-400">
+            <h3 class="text-lg font-semibold text-yellow-700">Sans Serif</h3>
+            <p class="font-sans text-yellow-800">The quick brown fox jumps over the lazy dog.</p>
+          </div>
+          <div class="p-6 rounded-xl shadow-md bg-pink-100 border border-pink-400">
+            <h3 class="text-lg font-semibold text-pink-700">Serif</h3>
+            <p class="font-serif text-pink-800">The quick brown fox jumps over the lazy dog.</p>
+          </div>
+          <div class="p-6 rounded-xl shadow-md bg-blue-100 border border-blue-400">
+            <h3 class="text-lg font-semibold text-blue-700">Mono → hover</h3>
+            <p class="font-mono hover:font-sans text-blue-800 transition">
+              The quick brown fox jumps over the lazy dog.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Cards -->
+      <section class="mt-12">
+        <h2 class="text-3xl font-bold text-center text-pink-600">Article Cards</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+          <article class="bg-white border-2 border-purple-400 rounded-xl p-6 shadow-lg hover:bg-purple-50 transition">
+            <h3 class="text-xl font-semibold text-purple-700">Beloved Manhattan soup stand closes</h3>
+            <p class="mt-2 text-gray-600">
+              New Yorkers are facing the winter chill with one less cozy corner to visit.
+            </p>
+            <p class="mt-3 font-sans text-gray-700">The quick brown fox ...</p>
+            <p class="font-serif text-gray-700">The quick brown fox ...</p>
+            <p class="font-mono hover:font-sans text-gray-700">The quick brown fox ...</p>
+          </article>
+
+          <article class="bg-white border-2 border-pink-400 rounded-xl p-6 shadow-lg hover:bg-pink-50 transition">
+            <h3 class="text-xl font-semibold text-pink-700">Pop‑ups bring spice to the city</h3>
+            <p class="mt-2 text-gray-600">
+              Weekend markets are back with artisanal soups and fresh bread.
+            </p>
+            <p class="mt-3 font-sans text-gray-700">The quick brown fox ...</p>
+            <p class="font-serif text-gray-700">The quick brown fox ...</p>
+            <p class="font-mono hover:font-sans text-gray-700">The quick brown fox ...</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Flexbox Boxes -->
+      <section class="mt-12">
+        <h2 class="text-3xl font-bold text-center text-blue-600">Flexbox Layout</h2>
+        <div class="mt-6 flex flex-row flex-wrap gap-4 justify-center">
+          <div class="basis-1/5 bg-red-100 border border-red-400 rounded-xl p-4 text-center shadow-md">BOX‑1</div>
+          <div class="basis-2/5 bg-green-100 border border-green-400 rounded-xl p-4 text-center shadow-md">BOX‑2</div>
+          <div class="basis-1/5 bg-yellow-100 border border-yellow-400 rounded-xl p-4 text-center shadow-md">BOX‑3</div>
+          <div class="basis-3/5 bg-blue-100 border border-blue-400 rounded-xl p-4 text-center shadow-md">BOX‑4</div>
+          <div class="bg-purple-100 border border-purple-400 rounded-xl p-4 text-center shadow-md">BOX‑5</div>
+        </div>
+      </section>
+
+      <!-- CTA Button -->
+      <section class="mt-16 text-center">
+        <button class="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold shadow-lg hover:scale-105 hover:from-purple-500 hover:to-pink-500 transition">
+          Try Tailwind Now
+        </button>
+      </section>
+    </main>
+
+    <footer class="mt-16 py-6 text-center text-gray-700 bg-gradient-to-r from-indigo-200 via-pink-200 to-yellow-200">
+      <p class="text-sm">Built with Tailwind CSS • Showing utilities like <span class="font-mono">bg-gradient</span>, <span class="font-mono">rounded-xl</span>, <span class="font-mono">shadow</span>, <span class="font-mono">flex basis</span>, <span class="font-mono">hover</span>, and more.</p>
+    </footer>
+  </body>
+</html>
